@@ -7,7 +7,7 @@ const Signup = (props) => {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        const port = "http://localhost:5000" || process.env.PORT;
+        const port =  process.env.PORT || "http://localhost:5000" ;
         const response = await fetch(`${port}/api/auth/createuser`, {
             method: 'POST',
             headers: {
