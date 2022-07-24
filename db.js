@@ -1,5 +1,5 @@
 const mongoose =require("mongoose");
-const mongoURL = ("mongodb+srv://admin:admin@cluster0.msl9h.mongodb.net/notebookDB");
+const mongoURL = ("mongodb+srv://admin-minhaz:Test123@cluster0.uotfc.mongodb.net/notebookDB");
 
 const connectToMongo =()=>{
     mongoose.connect(mongoURL,()=>{
