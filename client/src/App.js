@@ -12,6 +12,7 @@ import NoteState from './context/notes/NoteState';
 import Login from './componants/Login';
 import Signup from './componants/Signup';
 import Alert from './componants/Alert';
+import Footer from './componants/Footer';
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -37,6 +38,7 @@ function App() {
         <Route exact path="/signup" element= {<Signup showAlert={showAlert}/>}/>
       </Routes>
     </Router>
+    <Footer/>
     </NoteState>
   );
 }

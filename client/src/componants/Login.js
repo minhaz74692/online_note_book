@@ -26,7 +26,7 @@ const Login = (props) => {
 
         }
         else{
-            props.showAlert("Invalid Credentials","danger")
+            props.showAlert("Email or password is wrong","danger")
         }
     }
 

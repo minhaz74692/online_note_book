@@ -22,11 +22,10 @@ const Signup = (props) => {
             localStorage.setItem('token', json.authtoken);
             navigate('/');
             props.showAlert("Successfully signed up", "success")
-
-
         }
         else {
-            props.showAlert("Invalid details", "danger")
+            props.showAlert("User with this email already exist", "danger");
+            navigate('/')
         }
     }
 
