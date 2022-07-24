@@ -7,7 +7,7 @@ const Signup = (props) => {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        const port =  process.env.PORT || "http://localhost:5000" ;
+        const port =  "https://my-online-notebook.herokuapp.com" || "http://localhost:5000" ;
         const response = await fetch(`${port}/api/auth/createuser`, {
             method: 'POST',
             headers: {
