@@ -1,8 +1,7 @@
 const mongoose =require("mongoose");
-const mongoURL = ("mongodb+srv://admin-minhaz:Test123@cluster0.uotfc.mongodb.net/notebookDB");
-
+require('dotenv').config();
 const connectToMongo =()=>{
-    mongoose.connect(mongoURL,()=>{
+    mongoose.connect(process.env.MONGODB_URL,()=>{
         console.log("connented To mongo successfully");
     })
 }
